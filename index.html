@@ -19,32 +19,33 @@
 
   h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.4rem; /* smaller text */
+    font-size: 1.2rem; /* smaller to reduce width */
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px; /* tighter spacing */
     color: #004d4d;
-    text-shadow:
-      0 0 3px rgba(0, 191, 166, 0.5),
-      0 0 8px rgba(0, 150, 136, 0.4),
-      0 0 15px rgba(0, 111, 112, 0.3);
-    animation: glowPulse 3s ease-in-out infinite alternate;
     text-align: center;
+    line-height: 1.2;
+    text-shadow:
+      0 0 3px rgba(0, 191, 166, 0.4),
+      0 0 6px rgba(0, 150, 136, 0.3),
+      0 0 12px rgba(0, 111, 112, 0.2);
+    animation: glowPulse 3s ease-in-out infinite alternate;
   }
 
   @keyframes glowPulse {
     from {
       text-shadow:
-        0 0 2px rgba(0, 191, 166, 0.6),
-        0 0 6px rgba(0, 150, 136, 0.5),
-        0 0 12px rgba(0, 111, 112, 0.4);
+        0 0 2px rgba(0, 191, 166, 0.5),
+        0 0 6px rgba(0, 150, 136, 0.4),
+        0 0 10px rgba(0, 111, 112, 0.3);
       transform: scale(1);
     }
     to {
       text-shadow:
-        0 0 5px rgba(0, 191, 166, 0.8),
-        0 0 14px rgba(0, 150, 136, 0.6),
-        0 0 25px rgba(0, 111, 112, 0.5);
-      transform: scale(1.02);
+        0 0 4px rgba(0, 191, 166, 0.8),
+        0 0 12px rgba(0, 150, 136, 0.6),
+        0 0 20px rgba(0, 111, 112, 0.4);
+      transform: scale(1.01);
     }
   }
 </style>
